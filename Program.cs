@@ -39,3 +39,5 @@ while (targetDirs.Count > 0){
 }
 
 Console.WriteLine($"\nThe paths took {byteCountViaPathLengths} bytes.");
+
+public record FolderInfo(Int64 Id, String Path, DateTime Created);
