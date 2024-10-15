@@ -39,7 +39,7 @@ public class FolderInfoContext : DbContext
         @"CREATE TABLE FInfo
             (
             [ID] INTEGER NOT NULL PRIMARY KEY,
-            [ThreadId] NVARCHAR(2048) NOT NULL check(length(ThreadId) <= 2048),
+            [Path] NVARCHAR(2048) NOT NULL check(length(Path) <= 2048),
             [Created] NVARCHAR(30) default (datetime('now','localtime')) 
                       check(length(Created) <= 30)
             )"
